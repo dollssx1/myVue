@@ -9,6 +9,11 @@ const store = new Vuex.Store({
       getCount(){
         return count;
       }
+    },
+    actions:{
+      setCount(payload){
+        count = payload
+      }
     }
   })
 
